@@ -1,4 +1,5 @@
 import React from "react";
+import bgImage from "../imgs/lines.svg";
 
 export default function Layout() {
     return (
@@ -8,7 +9,7 @@ export default function Layout() {
                     <div className="lg:mb-0 mb-10">
                         <div className="group w-full h-full">
                             <div className="relative h-full">
-                                <img src="" alt="" className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover"/>
+                                <img src={bgImage} alt="" className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover"/>
                             </div>
                         </div>
                     </div>
