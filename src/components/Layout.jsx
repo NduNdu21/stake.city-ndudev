@@ -6,7 +6,11 @@ export default function Layout() {
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-2 grid-cols-1">
                     <div className="lg:mb-0 mb-10">
-                        
+                        <div className="group w-full h-full">
+                            <div className="relative h-full">
+                                <img src="" alt="" className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover"/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
