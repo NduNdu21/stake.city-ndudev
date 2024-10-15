@@ -31,7 +31,7 @@ export default function Layout() {
                             </div>
                         </div>
                     </div>
-                    <div className="bg-[#0D1B2A]/85 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
+                    <div className="bg-[#0D1B2A]/85 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl shadow-md shadow-[#A0AAB2]">
                         <h2 className="text-[#F0F3F5] text-4xl font-semibold leading-10 mb-11">Report Bugs</h2>
                         <input type="text" class="w-full h-12 text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Name"/>
                         <input type="text" class="w-full h-12 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Username"/>
