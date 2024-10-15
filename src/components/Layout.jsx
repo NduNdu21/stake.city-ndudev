@@ -1,15 +1,23 @@
 import React from "react";
 import bgImage from "../imgs/lines.svg";
+import { useState } from "react";
+
 
 export default function Layout() {
+    const [selectedFile, setSelectedFile] = useState(null);
+
+    const handleFileChange = (event) => {
+        setSelectedFile(event.target.files[0]);
+    };
+
     return (
-        <section className="py-24">
+        <section className="bg-[#0D1B2A] py-24">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div className="grid lg:grid-cols-2 grid-cols-1">
                     <div className="lg:mb-0 mb-10">
                         <div className="group w-full h-full">
                             <div className="relative h-full">
-                                <img src={bgImage} alt="" className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-[#0D1B2A] object-cover"/>
+                                <img src={bgImage} alt="" className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-[#0D1B2A] object-cover shadow-lg shadow-black"/>
                                 <h1 className="text-[#F0F3F5] text-4xl font-bold leading-10 absolute top-11 left-11">Report Bugs</h1>
                                 <div className="absolute bottom-0 w-full lg:p-11 p-5">
                                     {/* Section for logos and contact details if needed */}
@@ -18,7 +26,22 @@ export default function Layout() {
                         </div>
                     </div>
                     <div className="bg-[#0D1B2A] p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl">
-                        <h2 className="text-4xl font-semibold leading-10 mb-11">Send us a message</h2>
+                        <h2 className="text-[#F0F3F5] text-4xl font-semibold leading-10 mb-11">Send us a message</h2>
+                        <input type="text" class="w-full h-12 text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Name"/>
+                        <input type="text" class="w-full h-12 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Username"/>
+                        <input type="text" class="w-full h-12 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Email"/>
+                        <div className="inline-block">
+                            <button className="bg-green">
+                                {selectedFile ? selectedFile.name : "Choose File"}
+                            </button>
+                            <input
+                                type="file"
+                                className="absolute left-0 top-0 opacity-0 cursor-pointer w-full h-full"
+                                onChange={handleFileChange}
+                            />
+                        </div>
+                        <textarea rows={4} class="w-full text-[#F0F3F5] placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none p-4 mb-10" placeholder="Message"/>
+                        <button class="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700">Send</button>
                     </div>
                 </div>
             </div>
