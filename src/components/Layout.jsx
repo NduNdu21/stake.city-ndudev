@@ -30,8 +30,8 @@ export default function Layout() {
                         <input type="text" class="w-full h-12 text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Name"/>
                         <input type="text" class="w-full h-12 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Username"/>
                         <input type="text" class="w-full h-12 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Email"/>
-                        <div className="inline-block">
-                            <button className="bg-green">
+                        <div className="inline-block mb-10">
+                            <button className="bg-[#20C997] text-[#F0F3F5] px-4 py-1">
                                 {selectedFile ? selectedFile.name : "Choose File"}
                             </button>
                             <input
@@ -41,7 +41,7 @@ export default function Layout() {
                             />
                         </div>
                         <textarea rows={4} class="w-full text-[#F0F3F5] placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none p-4 mb-10" placeholder="Message"/>
-                        <button class="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700">Send</button>
+                        <button class="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 bg-[#20C997]">Send</button>
                     </div>
                 </div>
             </div>
