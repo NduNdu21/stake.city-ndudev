@@ -31,7 +31,7 @@ export default function Layout() {
                             </div>
                         </div>
                     </div>
-                    <div className="relative bg-[#0D1B2A]/85 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl shadow-md shadow-[#A0AAB2]">
+                    <form action="POST" className="relative bg-[#0D1B2A]/85 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl shadow-md shadow-[#A0AAB2]">
                         <h2 className="text-[#F0F3F5] text-4xl font-semibold leading-10 mb-10">Report Bugs</h2>
                         <input type="text" className="w-full h-8 text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Name"/>
                         <input type="text" className="w-full h-8 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Username"/>
@@ -48,7 +48,7 @@ export default function Layout() {
                         </div>
                         <textarea rows={2} className="w-full text-[#F0F3F5] placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none p-4 mb-7" placeholder="Message"/>
                         <button className="w-full h-8 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 bg-[#20C997]">Send</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
