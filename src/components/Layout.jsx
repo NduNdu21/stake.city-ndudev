@@ -21,8 +21,8 @@ export default function Layout() {
                         <div className="group w-full h-full">
                             <div className="relative h-full">
                                 {/* <img src={bgImage} alt="" className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-[#0D1B2A] object-cover shadow-lg shadow-black"/> */}
-                                <img src={moon} alt="moon" className={`absolute left-8 sm:left-16 md:left-32 bottom-2 sm:bottom-5 w-20 sm:w-40 md:w-56 h-auto ${styles.float}`}/>
-                                <img src={rocket} alt="rocket" className={`absolute right-2 sm:right-4 md:right-26 top-2 sm:top-5 w-20 sm:w-40 md:w-56 h-auto ${styles.float}`}/>
+                                <img src={moon} alt="moon" className={`absolute left-8 sm:left-16 md:left-32 bottom-2 sm:bottom-5 w-28 sm:w-48 md:w-64 h-auto ${styles.float}`}/>
+                                <img src={rocket} alt="rocket" className={`absolute right-2 sm:right-4 md:right-26 top-2 sm:top-5 w-28 sm:w-48 md:w-64 h-auto ${styles.float}`}/>
 
                                 <h1 className="text-[#F0F3F5] text-4xl font-bold leading-10 absolute top-11 left-11 opacity-0">Report</h1>
                                 <div className="absolute bottom-0 w-full lg:p-11 p-5">
