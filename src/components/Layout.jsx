@@ -21,8 +21,8 @@ export default function Layout() {
                         <div className="group w-full h-full">
                             <div className="relative h-full">
                                 {/* <img src={bgImage} alt="" className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-[#0D1B2A] object-cover shadow-lg shadow-black"/> */}
-                                <img src={moon} alt="moon" className={`absolute left-8 sm:left-16 md:left-32 bottom-2 sm:bottom-5 w-40 sm:w-64 md:w-96 h-auto ${styles.float}`}/>
-                                <img src={rocket} alt="rocket" className={`absolute right-8 sm:right-16 md:right-52 top-2 sm:top-5 w-40 sm:w-64 md:w-96 h-auto ${styles.float}`}/>
+                                <img src={moon} alt="moon" className={`absolute left-8 sm:left-16 md:left-32 bottom-2 sm:bottom-5 w-20 sm:w-40 md:w-56 h-auto ${styles.float}`}/>
+                                <img src={rocket} alt="rocket" className={`absolute right-2 sm:right-4 md:right-26 top-2 sm:top-5 w-20 sm:w-40 md:w-56 h-auto ${styles.float}`}/>
 
                                 <h1 className="text-[#F0F3F5] text-4xl font-bold leading-10 absolute top-11 left-11 opacity-0">Report</h1>
                                 <div className="absolute bottom-0 w-full lg:p-11 p-5">
@@ -31,12 +31,12 @@ export default function Layout() {
                             </div>
                         </div>
                     </div>
-                    <div className="relative bg-[#0D1B2A]/85 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl shadow-md shadow-[#A0AAB2] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg">
-                        <h2 className="text-[#F0F3F5] text-4xl font-semibold leading-10 mb-11">Report Bugs</h2>
-                        <input type="text" className="w-full h-12 text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Name"/>
-                        <input type="text" className="w-full h-12 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Username"/>
-                        <input type="text" className="w-full h-12 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Email"/>
-                        <div className="relative inline-block mb-10">
+                    <div className="relative bg-[#0D1B2A]/85 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl shadow-md shadow-[#A0AAB2]">
+                        <h2 className="text-[#F0F3F5] text-4xl font-semibold leading-10 mb-10">Report Bugs</h2>
+                        <input type="text" className="w-full h-8 text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Name"/>
+                        <input type="text" className="w-full h-8 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Username"/>
+                        <input type="text" className="w-full h-8 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Email"/>
+                        <div className="relative inline-block mb-7">
                             <button className="bg-[#20C997] text-[#F0F3F5] px-4 py-1">
                                 {selectedFile ? selectedFile.name : "Choose File"}
                             </button>
@@ -46,8 +46,8 @@ export default function Layout() {
                                 onChange={handleFileChange}
                             />
                         </div>
-                        <textarea rows={2} className="w-full text-[#F0F3F5] placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none p-4 mb-10" placeholder="Message"/>
-                        <button className="w-full h-12 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 bg-[#20C997]">Send</button>
+                        <textarea rows={2} className="w-full text-[#F0F3F5] placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none p-4 mb-7" placeholder="Message"/>
+                        <button className="w-full h-8 text-white text-base font-semibold leading-6 rounded-full transition-all duration-700 bg-[#20C997]">Send</button>
                     </div>
                 </div>
             </div>
