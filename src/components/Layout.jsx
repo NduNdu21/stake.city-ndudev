@@ -36,13 +36,13 @@ export default function Layout() {
                         <input type="text" className="w-full h-12 text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Name"/>
                         <input type="text" className="w-full h-12 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Username"/>
                         <input type="text" className="w-full h-12 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-10" placeholder="Email"/>
-                        <div className="inline-block mb-10">
+                        <div className="relative inline-block mb-10">
                             <button className="bg-[#20C997] text-[#F0F3F5] px-4 py-1">
                                 {selectedFile ? selectedFile.name : "Choose File"}
                             </button>
                             <input
                                 type="file"
-                                className="absolute left-0 top-0 opacity-0 cursor-pointer w-full h-full"
+                                className="absolute inset-0 opacity-0 cursor-pointer w-full h-full"
                                 onChange={handleFileChange}
                             />
                         </div>
