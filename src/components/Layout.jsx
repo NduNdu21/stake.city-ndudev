@@ -4,6 +4,7 @@ import { useState } from "react";
 import moon from "../imgs/moon.svg"
 import rocket from "../imgs/rocket.svg"
 import styles from "./Dashboard.module.css"
+import logo from "../logo7.svg"
 
 
 export default function Layout() {
@@ -27,13 +28,13 @@ export default function Layout() {
                                 <h1 className="text-[#F0F3F5] text-4xl font-bold leading-10 absolute top-11 left-11">Found an issue?</h1>
                                 <div className="absolute bottom-0 w-full lg:p-11 p-5">
                                     {/* Section for logos and contact details if needed */}
-                                    
+                                    <img src={logo} alt="logo" className="w-28 h-auto"/>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <form action="POST" className="relative bg-[#0D1B2A]/85 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl shadow-md shadow-[#A0AAB2]">
-                        <h2 className="text-[#F0F3F5] text-3xl font-semibold leading-10 mb-10">Report Bugs</h2>
+                        <h2 className="text-[#F0F3F5] text-3xl font-semibold leading-10 mb-10">Report it here:</h2>
                         <input type="text" className="w-full h-8 sm:h-10 text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Name"/>
                         <input type="text" className="w-full h-8 sm:h-10 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Username"/>
                         <input type="text" className="w-full h-8 sm:h-10 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Email"/>
