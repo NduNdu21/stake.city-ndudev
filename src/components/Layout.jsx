@@ -17,8 +17,8 @@ export default function Layout() {
     return (
         <section className="bg-wavy-pattern bg-cover bg-[#0D1B2A] bg-no-repeat min-h-screen py-12">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                <div className="grid lg:grid-cols-2 grid-cols-1 gap-6">
-                    <div className="lg:mb-0 mb-10">
+                <div className="flex grid lg:grid-cols-2 grid-cols-1 gap-6">
+                    <div className="flex-auto lg:mb-0 mb-10">
                         <div className="group w-full h-full">
                             <div className="relative h-full">
                                 {/* <img src={bgImage} alt="" className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-[#0D1B2A] object-cover shadow-lg shadow-black"/> */}
@@ -33,7 +33,7 @@ export default function Layout() {
                             </div>
                         </div>
                     </div>
-                    <form action="POST" className="relative bg-[#0D1B2A]/85 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl shadow-md shadow-[#A0AAB2]">
+                    <form action="POST" className="relative flex-auto bg-[#0D1B2A]/85 p-5 lg:p-11 lg:rounded-r-2xl rounded-2xl shadow-md shadow-[#A0AAB2]">
                         <h2 className="text-[#F0F3F5] text-3xl font-semibold leading-10 mb-10">Report it here:</h2>
                         <input type="text" className="w-full h-8 sm:h-10 text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Name"/>
                         <input type="text" className="w-full h-8 sm:h-10 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal leading-7 rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Username"/>
