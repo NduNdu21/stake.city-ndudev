@@ -20,11 +20,11 @@ export default function Layout() {
             
             <div className="flex flex-row justify-evenly">
                 <div>
-                    <img src={moon} alt="moon" className={`w-28 h-auto ${styles.float}`} />
-                    <img src={rocket} alt="rocket" className={`w-28 h-auto ${styles.float}`} />
-                    <img src={logo} alt="logo" className="w-28 h-auto" />
+                    <img src={moon} alt="moon" className={`w-52 h-auto ${styles.float}`} />
+                    <img src={rocket} alt="rocket" className={`w-52 h-auto ${styles.float}`} />
+                    <img src={logo} alt="logo" className="w-52 h-auto" />
                 </div>
-                <form action="POST" className=" bg-[#0D1B2A]/85 p-5 w-28 rounded-2xl shadow-md shadow-[#A0AAB2]">
+                <form action="POST" className=" bg-[#0D1B2A]/85 p-5 w-48 rounded-2xl shadow-md shadow-[#A0AAB2]">
                     <h2 className="text-[#F0F3F5] text-3xl font-semibold mb-10">Report it here:</h2>
                     <input type="text" className="h-8 text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Name" />
                     <input type="text" className="h-8 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Username" />
