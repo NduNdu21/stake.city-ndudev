@@ -16,50 +16,33 @@ export default function Layout() {
 
     return (
         <div className="bg-wavy-pattern bg-cover bg-[#0D1B2A] bg-no-repeat min-h-screen py-12">
-            {/* <div > */}
-            {/* <div className="flex flex-row gap-6"> */}
-            {/* <div className="lg:mb-0 mb-10">
-                    <div className="group w-full h-full">
-                        <div className="relative h-full"> */}
-            {/* <img src={bgImage} alt="" className="w-full h-full lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-[#0D1B2A] object-cover shadow-lg shadow-black"/> */}
-
-
-            {/* <h1 className="text-[#F0F3F5] text-4xl font-bold leading-10 absolute top-11 left-11">Found an issue?</h1>
-                            <div className="absolute bottom-0 w-full lg:p-11 p-5"> */}
-            {/* Section for logos and contact details if needed */}
-            {/* <img src={logo} alt="logo" className="w-28 h-auto" /> */}
-            {/* </div>
-                        </div>
-                    </div>
-                </div> */}
+            {/* <h1 className="text-[#F0F3F5] text-4xl font-bold leading-10 absolute top-11 left-11">Found an issue?</h1> */}
+            
             <div className="flex flex-row justify-evenly">
                 <div>
-                    <img src={moon} alt="moon" className={`w-28 sm:w-48 md:w-64 h-auto ${styles.float}`} />
-                    <img src={rocket} alt="rocket" className={`w-28 sm:w-48 md:w-64 h-auto ${styles.float}`} />
+                    <img src={moon} alt="moon" className={`w-28 h-auto ${styles.float}`} />
+                    <img src={rocket} alt="rocket" className={`w-28 h-auto ${styles.float}`} />
+                    <img src={logo} alt="logo" className="w-28 h-auto" />
                 </div>
                 <form action="POST" className=" bg-[#0D1B2A]/85 p-5 w-28 rounded-2xl shadow-md shadow-[#A0AAB2]">
-                    <h2 className="text-[#F0F3F5] text-3xl font-semibold  mb-10">Report it here:</h2>
-                    <input type="text" className=" h-8 sm:h-10 text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal  rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Name" />
-                    <input type="text" className=" h-8 sm:h-10 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal  rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Username" />
-                    <input type="text" className=" h-8 sm:h-10 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal  rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Email" />
+                    <h2 className="text-[#F0F3F5] text-3xl font-semibold mb-10">Report it here:</h2>
+                    <input type="text" className="h-8 text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-transparent text-lg font-normal rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Name" />
+                    <input type="text" className="h-8 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Username" />
+                    <input type="text" className="h-8 text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-transparent text-lg font-normal rounded-full border border-[#A0AAB2] focus:outline-none pl-4 mb-7" placeholder="Email" />
                     <div className="relative inline-block mb-7">
                         <button className="bg-[#20C997] text-[#F0F3F5] px-4 py-1">
                             {selectedFile ? selectedFile.name : "Choose File"}
                         </button>
                         <input
                             type="file"
-                            className="absolute inset-0 opacity-0 cursor-pointer  h-full"
+                            className="absolute inset-0 opacity-0 cursor-pointer h-full"
                             onChange={handleFileChange}
                         />
                     </div>
                     <textarea rows={2} className=" text-[#F0F3F5] placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal  rounded-full border border-[#A0AAB2] focus:outline-none p-4 mb-7" placeholder="Message" />
-                    <button className=" h-8 sm:h-10 text-white text-base font-semibold  rounded-full transition-all duration-700 bg-[#20C997]">Send</button>
+                    <button className="h-8 text-white text-base font-semibold rounded-full transition-all duration-700 bg-[#20C997]">Send</button>
                 </form>
-
-
             </div>
-            {/* </div> */}
-            {/* </div> */}
         </div>
     )
 }
