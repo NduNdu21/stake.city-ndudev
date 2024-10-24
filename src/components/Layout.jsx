@@ -5,6 +5,7 @@ import moon from "../imgs/moon.svg"
 import rocket from "../imgs/rocket.svg"
 import styles from "./Dashboard.module.css"
 import logo from "../logo7.svg"
+import graphic from "../imgs/report graphic.svg"
 
 
 export default function Layout() {
@@ -20,9 +21,10 @@ export default function Layout() {
             
             <div className="flex flex-row justify-stretch gap-10">
                 <div>
-                    <img src={moon} alt="moon" className={`w-52 h-auto ${styles.float}`} />
+                    {/* <img src={moon} alt="moon" className={`w-52 h-auto ${styles.float}`} />
                     <img src={rocket} alt="rocket" className={`w-52 h-auto ${styles.float}`} />
-                    <img src={logo} alt="logo" className="w-52 h-auto" />
+                    <img src={logo} alt="logo" className="w-52 h-auto" /> */}
+                    <img src={graphic} alt="graphic" />
                 </div>
                 <form action="POST" className=" bg-[#0D1B2A]/85 p-5 w-64 rounded-2xl shadow-md shadow-[#A0AAB2]">
                     <h2 className="text-[#F0F3F5] text-3xl font-semibold mb-10">Report it here:</h2>
