@@ -42,7 +42,7 @@ export default function Layout() {
                         />
                     </div>
                     <textarea rows={2} className=" text-[#F0F3F5] placeholder-gray-400 bg-transparent text-lg shadow-sm font-normal  rounded-full border border-[#A0AAB2] focus:outline-none p-4 mb-7" placeholder="Message" />
-                    <button className="h-8 text-white text-base font-semibold rounded-full transition-all duration-700 bg-[#20C997]">Send</button>
+                    <button className="h-8 w-full text-white text-base font-semibold rounded-full transition-all duration-700 bg-[#20C997]">Send</button>
                 </form>
             </div>
         </div>
