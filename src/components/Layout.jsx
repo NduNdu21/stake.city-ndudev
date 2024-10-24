@@ -18,7 +18,7 @@ export default function Layout() {
         <div className="bg-wavy-pattern bg-cover bg-[#0D1B2A] bg-no-repeat min-h-screen py-12">
             {/* <h1 className="text-[#F0F3F5] text-4xl font-bold leading-10 absolute top-11 left-11">Found an issue?</h1> */}
             
-            <div className="flex flex-row justify-evenly">
+            <div className="flex flex-row justify-stretch">
                 <div>
                     <img src={moon} alt="moon" className={`w-52 h-auto ${styles.float}`} />
                     <img src={rocket} alt="rocket" className={`w-52 h-auto ${styles.float}`} />
