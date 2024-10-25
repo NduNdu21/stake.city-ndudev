@@ -1,10 +1,5 @@
 import React from "react";
-//import bgImage from "../imgs/lines.svg";
 import { useState } from "react";
-// import moon from "../imgs/moon.svg"
-// import rocket from "../imgs/rocket.svg"
-// import styles from "./Dashboard.module.css"
-// import logo from "../logo7.svg"
 import graphic from "../imgs/graphic.png"
 
 
@@ -18,14 +13,10 @@ export default function Layout() {
 
     return (
         <div className="bg-wavy-pattern bg-cover bg-[#0D1B2A] bg-no-repeat min-h-screen py-12">
-            {/* <h1 className="text-[#F0F3F5] text-4xl font-bold leading-10 absolute top-11 left-11">Found an issue?</h1> */}
 
             <div className="flex flex-row justify-evenly px-10">
                 <div>
                     <h1 className="text-[#F0F3F5] text-4xl font-bold">Found an issue?</h1>
-                    {/* <img src={moon} alt="moon" className={`w-52 h-auto ${styles.float}`} />
-                    <img src={rocket} alt="rocket" className={`w-52 h-auto ${styles.float}`} />
-                    <img src={logo} alt="logo" className="w-52 h-auto" /> */}
                     <img src={graphic} alt="graphic" />
                 </div>
                 <form action="POST" className=" bg-[#0D1B2A]/85 p-5 w-2/5 h-auto rounded-2xl shadow-md shadow-[#A0AAB2]">
