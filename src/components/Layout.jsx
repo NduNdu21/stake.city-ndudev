@@ -1,10 +1,10 @@
 import React from "react";
 //import bgImage from "../imgs/lines.svg";
 import { useState } from "react";
-import moon from "../imgs/moon.svg"
-import rocket from "../imgs/rocket.svg"
-import styles from "./Dashboard.module.css"
-import logo from "../logo7.svg"
+// import moon from "../imgs/moon.svg"
+// import rocket from "../imgs/rocket.svg"
+// import styles from "./Dashboard.module.css"
+// import logo from "../logo7.svg"
 import graphic from "../imgs/graphic.png"
 
 
