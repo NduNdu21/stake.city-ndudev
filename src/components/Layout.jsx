@@ -22,7 +22,7 @@ export default function Layout() {
 
             <div className="flex flex-row justify-evenly px-10">
                 <div>
-                    <h1 className="text-[#F0F3F5] text-4xl font-bold leading-10 absolute top-11 left-11">Found an issue?</h1>
+                    <h1 className="text-[#F0F3F5] text-4xl font-bold">Found an issue?</h1>
                     {/* <img src={moon} alt="moon" className={`w-52 h-auto ${styles.float}`} />
                     <img src={rocket} alt="rocket" className={`w-52 h-auto ${styles.float}`} />
                     <img src={logo} alt="logo" className="w-52 h-auto" /> */}
