@@ -4,7 +4,7 @@ import rocketPic from "../imgs/rocket.svg"
 import graphic from "../imgs/graphic.png"
 
 
-export default function Report() {
+export default function ContactUs() {
     return (
         <div className="bg-wavy-pattern bg-cover bg-[#0D1B2A] bg-no-repeat min-h-screen py-12">
 
