@@ -8,8 +8,8 @@ import DocPage from "./components/documentation";
 import Header from "./components/Header"; // Import the Header component#
 import Dashboard from "./components/Dashboard";
 import styles from './App.module.css';
-import Report from "./components/Report";
 import Layout from "./components/Layout";
+import ContactUs from "./components/Contactus";
 
 const App = () => {
   const [center, setCenter] = useState(null);
@@ -142,7 +142,7 @@ const App = () => {
         <Route path="/white-paper" element={<WhitePaper />} />
         <Route path="/documentation" element={<DocPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/report" element={<Report />}/>
+        <Route path="/contact-us" element={<ContactUs />}/>
         <Route path="/bug-report" element={<Layout />}/>
       </Routes>
     </div>
