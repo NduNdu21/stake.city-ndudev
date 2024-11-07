@@ -2,6 +2,7 @@ import React from "react";
 import moonPic from "../imgs/moon.svg"
 import rocketPic from "../imgs/rocket.svg"
 import graphic from "../imgs/graphic.png"
+import { HiLocationMarker, HiMail, HiPhone } from "react-icons/hi";
 
 
 export default function ContactUs() {
@@ -18,7 +19,16 @@ export default function ContactUs() {
                     <button className="h-8 w-full text-white text-base font-semibold rounded-full transition-all duration-700 bg-[#20C997]">Send</button>
                 </form>
                 <div>
-                    <img src={graphic} alt="graphic" />
+                    <img src={graphic} alt="graphic" className="" />
+                    <div id="contact" className=""> 
+                        <HiLocationMarker />
+                        <p>London, England</p>
+                        <HiMail />
+                        <p>stake.city@gmail.com</p>
+                        <HiPhone />
+                        <p>+123 456789999</p>
+                    </div>
+
                 </div>
             </div>
         </div>
