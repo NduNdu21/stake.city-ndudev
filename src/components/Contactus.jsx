@@ -9,9 +9,9 @@ export default function ContactUs() {
     return (
         <div className="bg-space-bg bg-cover bg-no-repeat min-h-screen py-12">
 
-            <div className="flex flex-row justify-evenly px-10">
-                <form action="POST" className="bg-gradient-to-r from-[#0d1b2a]/80 to-[#20c999]/80 rounded-lg border-4 border-[#f0f3f5] p-5 w-2/5 h-auto">
-                    <h2 className="text-[#F0F3F5] text-3xl font-semibold mb-7">Contact Us</h2>
+            <div className="flex flex-row flex-wrap justify-evenly px-10">
+                <h1 className="text-[#F0F3F5] text-3xl font-semibold mb-7">Contact Us</h1>
+                <form action="POST" className="bg-gradient-to-r from-[#0d1b2a]/80 to-[#20c999]/80 rounded-lg border-4 border-[#f0f3f5] p-5 w-fit h-auto">
                     <input type="text" className="h-8 w-full text-[#F0F3F5] placeholder-gray-400  shadow-sm bg-[#0D1B2A] text-lg font-normal rounded-lg border border-[#A0AAB2] focus:outline-none pl-4 mb-5" placeholder="Name" />
                     <input type="text" className="h-8 w-full text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-[#0D1B2A] text-lg font-normal rounded-lg border border-[#A0AAB2] focus:outline-none pl-4 mb-5" placeholder="Username" />
                     <input type="text" className="h-8 w-full text-[#F0F3F5] placeholder-gray-400 shadow-sm bg-[#0D1B2A] text-lg font-normal rounded-lg border border-[#A0AAB2] focus:outline-none pl-4 mb-5" placeholder="Email" />
