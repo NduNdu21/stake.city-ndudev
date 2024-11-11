@@ -2,6 +2,8 @@ import React from "react";
 import moonPic from "../imgs/moon.svg"
 import rocketPic from "../imgs/rocket.svg"
 import graphic from "../imgs/graphic.png"
+import discord from "../imgs/discord-icon.svg"
+import twitter from "../imgs/x-icon.svg"
 import { HiLocationMarker, HiMail, HiPhone } from "react-icons/hi";
 
 
@@ -19,16 +21,19 @@ export default function ContactUs() {
                     <button className="h-8 w-full text-white text-base font-semibold rounded-full transition-all duration-700 bg-[#20C997]">Send</button>
                 </form>
                 <div>
-                    <img src={graphic} alt="graphic" className="" />
-                    <div id="contact" className=""> 
-                        <HiLocationMarker />
-                        <p>London, England</p>
-                        <HiMail />
-                        <p>stake.city@gmail.com</p>
-                        <HiPhone />
-                        <p>+123 456789999</p>
+                    <img src={graphic} alt="graphic" className="w-48 h-48" />
+                    <div id="contact" className="flex m-5"> 
+                        <HiLocationMarker className="w-5 h-5 text-[#F0F3F5] mx-1" />
+                        <p className="text-[#F0F3F5]">London, England</p>
+                        <HiMail className="w-5 h-5 text-[#F0F3F5] mx-1"/>
+                        <p className="text-[#F0F3F5]">stake.city@gmail.com</p>
+                        <HiPhone className="w-5 h-5 text-[#F0F3F5] mx-1"/>
+                        <p className="text-[#F0F3F5]">+123 456789999</p>
                     </div>
-
+                    <div id="socials" className="flex">
+                        <a href="http://"><img src={discord} alt="" className="w-10 h-10"/></a>
+                        <a href="http://"><img src={twitter} alt="" className="w-10 h-10"/></a>
+                    </div>
                 </div>
             </div>
         </div>
