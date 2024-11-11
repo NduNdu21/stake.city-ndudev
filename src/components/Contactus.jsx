@@ -1,6 +1,4 @@
 import React from "react"; 
-import moonPic from "../imgs/moon.svg"
-import rocketPic from "../imgs/rocket.svg"
 import graphic from "../imgs/graphic.png"
 import discord from "../imgs/discord-icon.svg"
 import twitter from "../imgs/x-icon.svg"
@@ -9,7 +7,7 @@ import { HiLocationMarker, HiMail, HiPhone } from "react-icons/hi";
 
 export default function ContactUs() {
     return (
-        <div className="bg-wavy-pattern bg-cover bg-[#0D1B2A] bg-no-repeat min-h-screen py-12">
+        <div className="bg-space-bg bg-cover bg-no-repeat min-h-screen py-12">
 
             <div className="flex flex-row justify-evenly px-10">
                 <form action="POST" className=" bg-[#0D1B2A]/85 p-5 w-2/5 h-auto rounded-2xl shadow-md shadow-[#A0AAB2]">
