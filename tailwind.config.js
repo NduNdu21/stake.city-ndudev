@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'wavy-pattern': "url('./imgs/lines.svg')",
-        'space-bg' : "url('./imgs/space-bg.svg')"
+        'space' : "url('./imgs/space-bg.svg')"
       },
 
       animation: {
