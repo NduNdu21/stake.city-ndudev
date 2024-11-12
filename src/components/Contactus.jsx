@@ -6,7 +6,7 @@ import { HiLocationMarker, HiMail, HiPhone } from "react-icons/hi";
 
 export default function ContactUs() {
     return (
-        <div className="bg-space-bg bg-cover bg-no-repeat min-h-screen py-12">
+        <div className="bg-space bg-auto bg-no-repeat min-h-screen py-12">
             <div className="flex flex-row flex-wrap justify-between px-10">
                 <h1 className="text-[#F0F3F5] text-3xl font-semibold mb-7">Contact Us</h1>
                 <form action="POST" className="bg-gradient-to-r from-[#0d1b2a]/80 to-[#20c999]/80 rounded-lg border-4 border-[#f0f3f5] p-5 w-fit md:w-3/5 h-auto">
