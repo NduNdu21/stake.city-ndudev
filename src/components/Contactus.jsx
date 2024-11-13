@@ -21,7 +21,7 @@ export default function ContactUs() {
                 </div>
 
                 {/* Info section: */}
-                <div className="flex flex-1 flex-col items-center md:items-start space-y-6">
+                <div className="flex flex-1 flex-col items-center space-y-6">
                     <img src={graphic2} alt="graphic" className="w-40 md:w-80 h-auto" />
                     <div className="bg-gradient-to-r from-[#0d1b2a]/80 to-[#20c999]/80 rounded-lg border-4 border-[#f0f3f5] w-full p-6 space-y-4">
                         <div id="contact" className="space-y-3">
